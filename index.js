@@ -21,6 +21,9 @@ const CHAINS = [
   { name: 'Monad Testnet',     rpc: 'https://testnet-rpc.monad.xyz', explorer: 'https://testnet.monadexplorer.com', token: 'MON' },
   { name: 'MegaETH Testnet',   rpc: 'https://carrot.megaeth.com/rpc', explorer: 'https://megaeth-testnet-v2.blockscout.com', token: 'ETH' },
   { name: 'Tempo Testnet',     rpc: 'https://rpc.moderato.tempo.xyz', explorer: 'https://explore.tempo.xyz', token: 'USD' },
+  { name: 'Unichain Sepolia', rpc: 'https://sepolia.unichain.org', explorer: 'https://sepolia.uniscan.xyz', token: 'ETH' },
+  { name: 'Soneium Minato',   rpc: 'https://rpc.minato.soneium.org', explorer: 'https://soneium-minato.blockscout.com', token: 'ETH' },
+  { name: 'Ink Sepolia',      rpc: 'https://rpc-gel-sepolia.inkonchain.com', explorer: 'https://explorer-sepolia.inkonchain.com', token: 'ETH' },
   // Mainnets
   { name: 'Ethereum',          rpc: 'https://ethereum-rpc.publicnode.com', explorer: 'https://etherscan.io', token: 'ETH' },
   { name: 'Base',              rpc: 'https://mainnet.base.org', explorer: 'https://basescan.org', token: 'ETH' },
@@ -146,7 +149,7 @@ async function main() {
   const mainnetsOnly = args.includes('--mainnets');
 
   let chains = CHAINS;
-  if (testnetsOnly) chains = chains.filter(c => c.name.includes('Sepolia') || c.name.includes('Testnet') || c.name.includes('Amoy'));
+  if (testnetsOnly) chains = chains.filter(c => c.name.includes('Sepolia') || c.name.includes('Testnet') || c.name.includes('Amoy') || c.name.includes('Minato'));
   if (mainnetsOnly) chains = chains.filter(c => !c.name.includes('Sepolia') && !c.name.includes('Testnet') && !c.name.includes('Amoy'));
 
   // Add custom RPCs
