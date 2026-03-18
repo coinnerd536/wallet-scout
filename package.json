@@ -1,0 +1,19 @@
+{
+  "name": "wallet-scout",
+  "version": "1.0.0",
+  "description": "Scan your wallet across EVM chains in one command. Shows balance, tx count, and activity across testnets and mainnets.",
+  "main": "index.js",
+  "bin": {
+    "wallet-scout": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["wallet", "evm", "scanner", "testnet", "multi-chain", "balance", "transactions", "cli", "airdrop"],
+  "author": "coinnerd536",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coinnerd536/wallet-scout.git"
+  }
+}
