@@ -24,6 +24,8 @@ const CHAINS = [
   { name: 'Unichain Sepolia', rpc: 'https://sepolia.unichain.org', explorer: 'https://sepolia.uniscan.xyz', token: 'ETH' },
   { name: 'Soneium Minato',   rpc: 'https://rpc.minato.soneium.org', explorer: 'https://soneium-minato.blockscout.com', token: 'ETH' },
   { name: 'Ink Sepolia',      rpc: 'https://rpc-gel-sepolia.inkonchain.com', explorer: 'https://explorer-sepolia.inkonchain.com', token: 'ETH' },
+  { name: 'ZetaChain Athens', rpc: 'https://zetachain-athens-evm.blockpi.network/v1/rpc/public', explorer: 'https://athens.explorer.zetachain.com', token: 'ZETA' },
+  { name: 'XRPL EVM',        rpc: 'https://rpc.xrplevm.org', explorer: 'https://evm-sidechain.xrpl.org', token: 'XRP' },
   // Mainnets
   { name: 'Ethereum',          rpc: 'https://ethereum-rpc.publicnode.com', explorer: 'https://etherscan.io', token: 'ETH' },
   { name: 'Base',              rpc: 'https://mainnet.base.org', explorer: 'https://basescan.org', token: 'ETH' },
